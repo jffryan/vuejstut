@@ -1,6 +1,7 @@
 import { evenOrOdd, multiply } from "@/playground/tests";
 
 // Organizational for self
+/*
 describe("Basic math", () => {
   it("adds two numbers", () => {
     expect(1 + 1).toBe(2);
@@ -27,3 +28,5 @@ describe("Basic math", () => {
     });
   });
 });
+
+*/
