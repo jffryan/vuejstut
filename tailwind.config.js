@@ -15,6 +15,14 @@ module.exports = {
         "brand-blue-2": "#326771",
         "brand-red-1": "#931621",
       },
+      boxShadow: {
+        blue: "0 3px 15px #326771",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      margin: ["first"],
     },
   },
   plugins: [],
