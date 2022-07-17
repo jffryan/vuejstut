@@ -34,7 +34,13 @@
             data-test="profile-image"
             @click="logoutUser"
           />
-          <action-button v-else data-test="login-button" @click="loginUser" />
+          <action-button
+            v-else
+            data-test="login-button"
+            button-text="Sign in"
+            button-type="primary"
+            @click="loginUser"
+          />
         </div>
       </div>
     </div>

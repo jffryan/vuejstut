@@ -1,5 +1,8 @@
 <template>
-  <img class="w-12 h-12 object-contain rounded-3xl" :src="imageLink" />
+  <img
+    class="w-12 h-12 object-contain rounded-3xl cursor-pointer transition duration-150 ease-out hover:shadow-blue"
+    :src="imageLink"
+  />
 </template>
 
 <script>
