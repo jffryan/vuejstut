@@ -43,6 +43,7 @@
           />
         </div>
       </div>
+      <submenu-nav v-if="isLoggedIn" data-test="submenu-nav" />
     </div>
   </header>
 </template>
@@ -50,12 +51,14 @@
 <script>
 import ActionButton from "@/components/ActionButton.vue";
 import ProfileImage from "@/components/ProfileImage.vue";
+import SubmenuNav from "@/components/SubmenuNav.vue";
 
 export default {
   name: "MainNav",
   components: {
     ActionButton,
     ProfileImage,
+    SubmenuNav,
   },
   data() {
     return {

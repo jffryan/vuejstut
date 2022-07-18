@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658090723473" clover="3.2.0">
-  <project timestamp="1658090723473" name="All files">
-    <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="4" coveredelements="4" complexity="0" loc="3" ncloc="3" packages="2" files="2" classes="2"/>
+<coverage generated="1658117202719" clover="3.2.0">
+  <project timestamp="1658117202719" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="9" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="2" files="3" classes="3"/>
     <package name="assets.imgs">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="profileImage.png" path="C:\Users\jffry\Documents\Coding\udemy\vuejs-paskhaver\job-search\src\assets\imgs\profileImage.png">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
       </file>
     </package>
     <package name="components">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="ActionButton.vue" path="C:\Users\jffry\Documents\Coding\udemy\vuejs-paskhaver\job-search\src\components\ActionButton.vue">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="8" count="2" type="stmt"/>
-        <line num="22" count="8" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+      </file>
+      <file name="SubmenuNav.vue" path="C:\Users\jffry\Documents\Coding\udemy\vuejs-paskhaver\job-search\src\components\SubmenuNav.vue">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
       </file>
     </package>
   </project>
