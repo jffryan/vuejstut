@@ -1,6 +1,9 @@
 <template>
   <section>
-    <h1 class="font-bold tracking-tighter text-8xl mb-14">
+    <h1
+      class="font-bold tracking-tighter text-8xl mb-14"
+      data-test="title-phrase"
+    >
       <!-- This is what I did but he wants something different using all the logic inside the computed object
       <span :class="['capitalize', title]">{{ title }}</span> for everyone
       -->
@@ -19,6 +22,7 @@ export default {
   data() {
     return {
       title: "build",
+      titles: ["build", "create", "design", "code"],
       interval: null,
     };
   },
@@ -38,8 +42,7 @@ export default {
   methods: {
     changeTitle() {
       this.interval = setInterval(() => {
-        const titles = ["build", "create", "design", "code"];
-        this.title = nextElementInList(titles, this.title);
+        this.title = nextElementInList(this.titles, this.title);
       }, 3000);
     },
   },
