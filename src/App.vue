@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import MainNav from "@/components/MainNav.vue";
+import MainNav from "@/components/navigation/MainNav.vue";
 import HeroSection from "@/components/HeroSection.vue";
 
 export default {
