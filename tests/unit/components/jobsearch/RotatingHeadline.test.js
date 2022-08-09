@@ -1,7 +1,7 @@
 import { nextTick } from "vue";
 import { mount } from "@vue/test-utils";
 
-import RotatingHeadline from "@/components/RotatingHeadline";
+import RotatingHeadline from "@/components/jobsearch/RotatingHeadline";
 
 describe("Rotating Headline", () => {
   // These will apply to every test. They shouldn't really affect any debugging.

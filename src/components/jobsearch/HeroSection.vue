@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import RotatingHeadline from "@/components/RotatingHeadline.vue";
-import JobSearchForm from "@/components/JobSearchForm.vue";
+import RotatingHeadline from "@/components/jobsearch/RotatingHeadline.vue";
+import JobSearchForm from "@/components/jobsearch/JobSearchForm.vue";
 
 import staticImage from "@/assets/imgs/VueLogo.png";
 
