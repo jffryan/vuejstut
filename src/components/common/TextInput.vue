@@ -2,8 +2,7 @@
   <input
     type="text"
     class="w-full text-lg font-normal focus:outline-none"
-    :value="value"
-    :input-key="inputKey"
+    :value="modelValue"
     :placeholder="placeholder"
     @input="handleInput"
   />
@@ -18,24 +17,17 @@ export default {
       required: false,
       default: "",
     },
-    inputKey: {
-      type: String,
-      required: true,
-    },
-    value: {
+    modelValue: {
       type: String,
       required: true,
     },
   },
+  emits: ["update:modelValue"],
   methods: {
     handleInput(event) {
       const that = this;
       const userInput = event.target.value;
-      const payload = {
-        inputKey: that.inputKey,
-        userInput: userInput,
-      };
-      that.$emit("handleInput", payload);
+      that.$emit("update:modelValue", userInput);
     },
   },
 };
