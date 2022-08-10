@@ -3,15 +3,14 @@
     class="flex items-center w-full h-12 mt-14 border border-solid border-brand-gray-3 rounded-3xl"
   >
     <font-awesome-icon :icon="['fas', 'search']" class="ml-4 mr-3" />
-
     <div class="flex flex-nowrap flex-1 h-full text-base font-light">
       <div class="relative flex items-center flex-1 h-full pr-3">
         <label class="absolute left-0 -top-10">Role</label>
-        <input
-          v-model="role"
-          type="text"
-          placeholder="Software engineer"
-          class="w-full text-lg font-normal focus:outline-none"
+        <text-input
+          placeholder="Software Engineer"
+          input-key="role"
+          :value="role"
+          @handle-input="updateInputValue"
         />
       </div>
       <span
@@ -20,15 +19,14 @@
       >
       <div class="relative flex items-center flex-1 h-full pl-3">
         <label class="absolute left-0 -top-10">Where?</label>
-        <input
-          v-model="location"
-          type="text"
-          placeholder="Nashville"
-          class="w-full text-lg font-normal focus:outline-none"
+        <text-input
+          placeholder="Los Angeles"
+          input-key="location"
+          :value="location"
+          @handle-input="updateInputValue"
         />
       </div>
     </div>
-
     <action-button
       button-text="Search"
       button-type="secondary"
@@ -38,18 +36,28 @@
 </template>
 
 <script>
-import ActionButton from "@/components/ActionButton.vue";
+import ActionButton from "@/components/common/ActionButton.vue";
+import TextInput from "@/components/common/TextInput.vue";
 
 export default {
   name: "JobSearchForm",
   components: {
     ActionButton,
+    TextInput,
   },
   data() {
     return {
       role: "",
       location: "",
     };
+  },
+  methods: {
+    updateInputValue(payload) {
+      const that = this;
+      const { inputKey, userInput } = payload;
+      that[inputKey] = userInput;
+      console.log(payload);
+    },
   },
 };
 </script>
