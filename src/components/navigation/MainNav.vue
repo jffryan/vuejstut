@@ -4,12 +4,10 @@
       <div
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
-        <a
-          :href="url"
-          target="_blank"
-          rel="noopener noreferrer"
+        <router-link
+          to="/"
           class="flex items-center h-full text-xl transition duration-150 ease-out hover:text-brand-blue-2"
-          >{{ siteTitle }}</a
+          >{{ siteTitle }}</router-link
         >
         <nav class="h-full ml-12">
           <ul class="flex h-full p-0 m-0 list-none">
@@ -19,11 +17,11 @@
               class="h-full ml-9 first:ml-0 transition duration-150 ease-out"
               data-test="main-nav-list-item"
             >
-              <a
-                :href="menuItem.link"
+              <router-link
+                :to="menuItem.link"
                 tabindex="0"
                 class="flex items-center h-full p-2 hover:text-brand-blue-2"
-                >{{ menuItem.name }}</a
+                >{{ menuItem.name }}</router-link
               >
             </li>
           </ul>
@@ -63,31 +61,30 @@ export default {
   data() {
     return {
       siteTitle: "Vue Demo",
-      url: "/",
       menuItems: [
         {
           name: "Teams",
-          link: "/",
+          link: "/jobs/results",
         },
         {
           name: "Locations",
-          link: "/",
+          link: "/jobs/results",
         },
         {
           name: "Life at COMPANY",
-          link: "/",
+          link: "/jobs/results",
         },
         {
           name: "How we hire",
-          link: "/",
+          link: "/jobs/results",
         },
         {
           name: "Students",
-          link: "/",
+          link: "/jobs/results",
         },
         {
           name: "Jobs",
-          link: "/",
+          link: "/jobs/results",
         },
       ],
       isLoggedIn: false,
