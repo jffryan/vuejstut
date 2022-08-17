@@ -1,19 +1,17 @@
 <template>
   <div>
     <main-nav />
-    <hero-section />
+    <router-view />
   </div>
 </template>
 
 <script>
-import MainNav from "@/components/navigation/MainNav.vue";
-import HeroSection from "@/components/jobsearch/HeroSection.vue";
+import MainNav from "@/components/navigation/MainNav";
 
 export default {
   name: "App",
   components: {
     MainNav,
-    HeroSection,
   },
 };
 </script>
