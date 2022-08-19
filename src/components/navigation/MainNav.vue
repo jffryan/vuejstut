@@ -5,7 +5,7 @@
         class="flex flex-nowrap h-full px-8 mx-auto border-b border-solid border-brand-gray-1"
       >
         <router-link
-          to="/"
+          :to="{ name: 'Home' }"
           class="flex items-center h-full text-xl transition duration-150 ease-out hover:text-brand-blue-2"
           >{{ siteTitle }}</router-link
         >
