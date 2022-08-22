@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HeroSection from "@/components/jobsearch/HeroSection.vue";
+import HeroSection from "@/components/JobSearch/HeroSection";
 export default {
   name: "HomeView",
   components: {
