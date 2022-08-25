@@ -41,7 +41,9 @@
           </div>
         </div>
         <div class="mt-2 text-center">
-          <router-link :to="jobPageLink" class=""> Expand </router-link>
+          <router-link :to="jobPageLink" data-test="job-page-link">
+            Expand
+          </router-link>
         </div>
       </div>
     </router-link>
