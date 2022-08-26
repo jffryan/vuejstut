@@ -77,7 +77,8 @@ export default {
   },
   async mounted() {
     const that = this;
-    const url = "http://localhost:3000/jobs";
+    const baseUrl = process.env.VUE_APP_API_URL;
+    const url = `${baseUrl}/jobs`;
 
     const response = await axios.get(url);
     that.jobs = response.data;
