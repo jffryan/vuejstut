@@ -5,6 +5,10 @@ describe("state", () => {
     const startingState = state();
     expect(startingState.isLoggedIn).toBe(false);
   });
+  it("stores job listings", () => {
+    const startingState = state();
+    expect(startingState.jobs).toEqual([]);
+  });
 });
 
 describe("mutations", () => {
@@ -20,6 +24,13 @@ describe("mutations", () => {
       const state = { isLoggedIn: true };
       mutations.LOGOUT_USER(state);
       expect(state).toEqual({ isLoggedIn: false });
+    });
+  });
+  describe("RECEIVE_JOBS", () => {
+    it("receives jobs from API response", () => {
+      const state = { jobs: [] };
+      mutations.RECEIVE_JOBS(state, ["Job1", "Job2"]);
+      expect(state).toEqual({ jobs: ["Job1", "Job2"] });
     });
   });
 });

@@ -53,7 +53,7 @@ import ActionButton from "@/components/common/ActionButton.vue";
 import ProfileImage from "@/components/navigation/ProfileImage.vue";
 import SubmenuNav from "@/components/navigation/SubmenuNav.vue";
 
-import { LOGIN_USER, LOGOUT_USER } from "@/store";
+import { LOGIN_USER, LOGOUT_USER } from "@/store/variables";
 
 export default {
   name: "MainNav",

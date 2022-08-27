@@ -1,5 +1,14 @@
 import { createStore } from "vuex";
 
+import getJobs from "@/api/getJobs";
+
+import {
+  LOGIN_USER,
+  LOGOUT_USER,
+  RECEIVE_JOBS,
+  FETCH_JOBS,
+} from "@/store/variables";
+
 // ---------------------------
 //* STATE
 // ---------------------------
@@ -7,15 +16,13 @@ import { createStore } from "vuex";
 export const state = () => {
   return {
     isLoggedIn: false,
+    jobs: [],
   };
 };
 
 // ---------------------------
 //* MUTATIONS
 // ---------------------------
-
-export const LOGIN_USER = "LOGIN_USER";
-export const LOGOUT_USER = "LOGOUT_USER";
 
 export const mutations = {
   // Mutations need to be synchronous methods
@@ -24,6 +31,20 @@ export const mutations = {
   },
   [LOGOUT_USER](state) {
     state.isLoggedIn = false;
+  },
+  [RECEIVE_JOBS](state, jobs) {
+    state.jobs = jobs;
+  },
+};
+
+// ---------------------------
+//* ACTIONS
+// ---------------------------
+
+export const actions = {
+  [FETCH_JOBS]: async (context) => {
+    const jobListings = await getJobs();
+    context.commit(RECEIVE_JOBS, jobListings);
   },
 };
 
@@ -34,8 +55,8 @@ export const mutations = {
 const store = createStore({
   state,
   mutations,
+  actions,
   getters: {},
-  actions: {},
   modules: {},
   strict: process.env.NODE_ENV !== "production",
 });
