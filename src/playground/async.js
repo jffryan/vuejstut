@@ -8,7 +8,7 @@ const fetchJobsV1 = () => {
   });
 };
 
-// fetchJobsV1();
+fetchJobsV1();
 
 const fetchJobsV2 = async () => {
   const response = await axios.get(url);
