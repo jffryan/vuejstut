@@ -15,4 +15,11 @@ describe("mutations", () => {
       expect(state).toEqual({ isLoggedIn: true });
     });
   });
+  describe("LOGOUT_USER", () => {
+    it("logs the user out", () => {
+      const state = { isLoggedIn: true };
+      mutations.LOGOUT_USER(state);
+      expect(state).toEqual({ isLoggedIn: false });
+    });
+  });
 });
