@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1661625406465" clover="3.2.0">
-  <project timestamp="1661625406465" name="All files">
-    <metrics statements="24" coveredstatements="24" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="9" elements="33" coveredelements="33" complexity="0" loc="24" ncloc="24" packages="6" files="7" classes="7"/>
+<coverage generated="1661716467635" clover="3.2.0">
+  <project timestamp="1661716467635" name="All files">
+    <metrics statements="37" coveredstatements="37" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="12" elements="49" coveredelements="49" complexity="0" loc="37" ncloc="37" packages="7" files="9" classes="9"/>
+    <package name="api">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="getJobs.js" path="C:\Users\jffry\Desktop\code\udemy\vuejs-paskhaver\job-search\src\api\getJobs.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+      </file>
+    </package>
     <package name="assets.imgs">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="profileImage.png" path="C:\Users\jffry\Desktop\code\udemy\vuejs-paskhaver\job-search\src\assets\imgs\profileImage.png">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
       </file>
     </package>
     <package name="components.JobResults">
@@ -22,8 +33,8 @@
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="ActionButton.vue" path="C:\Users\jffry\Desktop\code\udemy\vuejs-paskhaver\job-search\src\components\common\ActionButton.vue">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
         <line num="25" count="3" type="stmt"/>
       </file>
       <file name="TextInput.vue" path="C:\Users\jffry\Desktop\code\udemy\vuejs-paskhaver\job-search\src\components\common\TextInput.vue">
@@ -38,20 +49,31 @@
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="SubmenuNav.vue" path="C:\Users\jffry\Desktop\code\udemy\vuejs-paskhaver\job-search\src\components\navigation\SubmenuNav.vue">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="20" count="1" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
       </file>
     </package>
     <package name="store">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
       <file name="index.js" path="C:\Users\jffry\Desktop\code\udemy\vuejs-paskhaver\job-search\src\store\index.js">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+      </file>
+      <file name="variables.js" path="C:\Users\jffry\Desktop\code\udemy\vuejs-paskhaver\job-search\src\store\variables.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
       </file>
     </package>
     <package name="utils">
